@@ -7,6 +7,7 @@ Observações:
 >
 \
 1ª QUESTÃO: Qual o motivo para realizar o carregamento do modelo fora dos endpoint na aplicação flask? Pergunta relativa ao iris-classifier-API. 
+
 Carregando fora das rotas, o modelo pode ser acessado por mais de uma. Se o modelo é carregado em uma rota, há um custo maior de tempo na requisição.
 
 \

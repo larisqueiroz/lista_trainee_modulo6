@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "d6e915b8-efb0-4992-8c35-6d5c409ad5b4",
+		"name": "API_FastAPI_tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.99.101:80",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "80"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict_test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.99.101:80/predict_test",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "80",
+					"path": [
+						"predict_test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"features\": [7.0,3.2,4.7,1.4],\r\n    \"label\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.99.101:80/predict/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "80",
+					"path": [
+						"predict",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

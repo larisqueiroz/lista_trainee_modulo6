@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "ccf139d8-0759-4893-832e-a7ecf2f801cd",
+		"name": "API_Django_tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "predict_test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.99.101:8080",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"features\":\"4.9,3.0,1.4,0.2\",\n\t\"label\": \"null\"\n}"
+				},
+				"url": {
+					"raw": "http://192.168.99.101:8080/predict/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"predict",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    api:
+        
+        container_name: test_lapisco_trainee_api_iris_django2
+        command: "python manage.py runserver  0.0.0.0:8080"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - 8080:8080
+        env_file: iris/.env
+        
+        restart: always

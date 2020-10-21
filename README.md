@@ -16,7 +16,7 @@ Carregando fora das rotas, o modelo pode ser acessado por mais de uma. Se o mode
 ```
 (Acessar pasta "API-docker-django2")
 
-docker-compose up
+docker-compose up --build
 ```
 
 \
@@ -25,5 +25,5 @@ docker-compose up
 ```
 (Acessar a pasta "API-docker-fastapi")
 
-docker-compose up
+docker-compose up --build
 ```

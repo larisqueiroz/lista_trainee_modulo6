@@ -28,16 +28,3 @@ docker-compose up --build
 docker-compose up --build
 ```
 
-\
-6ª QUESTÃO: Crie uma API que contenha um churn detector para os dados de utilização do
-Globo Play. Não se preocupe com o resultado e assertividade de modelo de
-ML nesse momento. Se preocupe em desenvolver um pipeline, servil-lo,
-treinar um modelo de ML e servi-lo. Taxas de acerto não serão avaliadas
-aqui, apenas a entrega da solução final. Seu pipeline pode ser diferente do
-proposto pelo meu.
-
-```
-(Acessar a pasta "Churn_Detector/src")
-
-uvicorn app:app --reload
-```
